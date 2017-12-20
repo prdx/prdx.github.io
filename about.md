@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 I play many roles:
-1. I am a graduate student at [Northeastern University](ccis.northeastern.edu)
+1. I am a graduate student at [Northeastern University](https://ccis.northeastern.edu)
 2. Fulbright scholar
 3. Cat
 
