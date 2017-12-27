@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+My name is Bagus. Pronounced as `BAH-gus TRI-HAT-MA-JA`.
+
 My goal is to improve the way we process the data. 
 
 In this era where data is ubiquitous, I want to understand how we can build a system that can handle and process high amount of data. I plan not only improve the machine learning methods itself but also I want to improve from application, operating system, and hardware levels.
@@ -23,5 +25,5 @@ You can find me on other places as well:
 [linkedIn](https://www.linkedin.com/in/bagustrihatmaja/)
 [instagram](https://www.instagram.com/bagustrihatmaja/)
 
-*The posts on this blog will be in Indonesian and English.*
+*The posts on this blog will be in Indonesian or English.*
 
