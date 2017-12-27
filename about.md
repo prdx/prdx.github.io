@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-My name is Bagus Trihatmaja. Pronounced as `BAH-gus TRI-HAT-MA-JA`.
+My name is Bagus Trihatmaja. Pronounced as `BAH-gus TRI-HAT-MA-JA`, according to Facebook.
 
 My goal is to improve the way we process the data. 
 
@@ -15,7 +15,7 @@ Outside of studying, I enjoy myself reading science or historical fiction novels
 I found myself enjoying teaching as well. I would try my best to study, so that I can teach my friends. Oftentimes, I do that voluntarily. I feel, if I can explain something in a simple way, that means I understand the subject well enough.
 
 I am playing many roles:
-1. I am a graduate student at [Northeastern University](https://ccis.northeastern.edu)
+1. I am a graduate student at [Northeastern University](https://www.ccis.northeastern.edu)
 2. Fulbright scholar
 3. Cat
 
