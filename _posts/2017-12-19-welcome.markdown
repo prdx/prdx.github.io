@@ -7,7 +7,7 @@ categories: random
 
 Hi there!
 
-This is me Bagus and this will be my personal blog. 
+This is me: Bagus, and this will be my personal blog. 
 
 Initially I wanted to be geeky and call this blog my `/dev/null`, however I found the name is not correct. This is not my `/dev/null`. 
 
