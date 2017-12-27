@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-My name is Bagus. Pronounced as `BAH-gus TRI-HAT-MA-JA`.
+My name is Bagus Trihatmaja. Pronounced as `BAH-gus TRI-HAT-MA-JA`.
 
 My goal is to improve the way we process the data. 
 
