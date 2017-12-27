@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Welcome!"
+date:   2017-12-19 21:26:45 -0500
+categories: random
+---
+
+Hi there!
+
+This is me Bagus and this will be my personal blog. Initially I wanted to be geeky and call this blog my `/dev/null`, however I found the name is not correct. This is not my `/dev/null`. And then, I move on to another geeky terms, to sound cool, I wanted to name this blog as my `null space`. But then it is not also correct. What I add to this blog, does change me.
+Being lazy, in the end, I will just call this my `personal blog` instead.
+
