@@ -5,11 +5,10 @@ date:   2017-12-26
 categories: data analysis
 ---
 
-In our course, we are told to make a mini poster. The poster is about data analysis of the topic we choose (usually it is a topic we care about). I like cycling, so I made a poster about cycling. And then, what? I didn't have any personal data about my trips (I don't record my trip on Strava). 
-Although I know, I commute 6 miles almost everyday or ~ 44 minutes on average / day. So, I decided to make something else but still about cycling. 
 
-[Hubway](https://www.thehubway.com) is bike sharing program in Boston, Cambridge, Somerville and Brookline area. Hubway publishes its trips data each month and contains the origin and destination, trip duration, gender, age and its user category.
-There has been a [data challenge](https://www.thehubway.com), held by Hubway as well. Some of the results, inspired me.
+I like cycling, so I wanted to do some data analysis on cycling. And then, what? The problem is I didn't have any personal data about my trips (I don't record my trip on Strava). Although I know, I commute 6 miles almost everyday or ~ 44 minutes on average / day. So, I decided to make something else but still about cycling.
+
+Then I remember I live in Boston! (Uh, Ok...). In Boston, not only we have Red Sox but also Hubway. [Hubway](https://www.thehubway.com) is bike sharing program in Boston, Cambridge, Somerville and Brookline area. Hubway publishes its trips data each month and contains the origin and destination, trip duration, gender, age and its user category. Great! Now I can work on a topic that interests me.
 
 In doing data analysis, we first have to tidy the data, transform it, and visualize it. I won't model it this time, what we will do is just exploratory data analysis (EDA).
 
@@ -18,7 +17,7 @@ In doing data analysis, we first have to tidy the data, transform it, and visual
 
 We are lucky, the dataset is already tidy. By tidy, I mean, every row represents a single observation, and every column represents a single variable. What remains, is just how we handle the missing values.
 
-```
+```r
 # We read the hubway data and combine them into one
 # In the dataset there is characters \N to mark the empty data, we will replace
 # them as NA.
@@ -42,7 +41,7 @@ hubway <- as_tibble(hubway)
 
 Here, we want to only focus with the trips under 30 minutes. Why? Because trips under 30 minutes won't be charged extra. Who wants to pay extra?
 
-```
+```r
 # Tripduration is in second
 # We also do mutate to get the age of each user
 under_30_min_trips <- as_tibble(
@@ -62,7 +61,7 @@ levels(under_30_min_trips$gender) <- c("Not Provided", "Male", "Female")
 Exploratory data analysis starts with generating at least a question, confirming by visualizing the data, and then generate more questions based on the visualization.
 Now, as a start, *we want to know whether people really usually ride under thirty minutes?*
 
-```
+```r
 hubway %>%
   group_by(usertype) %>%
   summarise(p = mean(tripduration <= 1800)) %>%
@@ -78,7 +77,7 @@ hubway %>%
 Now that we know more than 80 % of the trips are less than or equal 30 minutes. Next question we want to answer is:
 *What is the most favorite route for trips under 30 minutes?* We will try to see what is the most popular starts and destinations.
 
-```
+```r
 # Here we want to know which station is the most popular for start.
 # We will just show the top ten for clarity in the graph
 under_30_min_trips %>%
@@ -123,7 +122,7 @@ under_30_min_trips %>%
 
 The graphs above don't tell us what is the most popular route, because if we combine those two graphs, we will see that the most popular route starts and ends with the same station, which is not possible for a route.
 
-```
+```r
 under_30_min_trips <-
   unite(under_30_min_trips,
   route,
@@ -165,7 +164,7 @@ That represents what we are looking for, that is, the most favorite route for sh
 Now, let's move on to the next question we want to search the answer: *When is most of the Hubway user use the service in the year?*
 
 
-```
+```r
 # Usage each month
 under_30_min_trips %>%
   ggplot(aes(x = as.Date(starttime))) +
@@ -212,7 +211,7 @@ We can see that highest number of trip is in Summer, but wait, there are trips a
 
 Now, for the last question, how can we understand better the user? One way to answer this is by to know from what age people usually use Hubway, for each membership status and gender. Gender is self-reported by member. We will exclude people who does not provide their gender.
 
-```
+```r
 under_30_min_trips %>%
   filter(gender != "Not Provided") %>%
   ggplot +
@@ -239,5 +238,7 @@ As expected, the number of rides dropped during winter. However, some people sti
 
 The average age of short trip riders, regardless their gender and membership status, is around 30 years old.
 
+[poster]({{ "/assets/hubway/mini-poster.pdf" | absolute_url }})
 
 [data source](https://www.thehubway.com/system-data)
+
