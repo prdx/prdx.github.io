@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hubway our way: Exploratory data analysis on Hubway trips 2015"
+title:  "Hubway Our Way: Exploratory Data Analysis on Hubway Trips 2015"
 date:   2017-12-26
 categories: data analysis
 ---
