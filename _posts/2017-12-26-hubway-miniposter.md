@@ -3,6 +3,7 @@ layout: post
 title:  "Hubway Our Way: Exploratory Data Analysis on Hubway Trips 2015"
 date:   2017-12-26
 categories: data analysis
+author: Bagus Trihatmaja
 ---
 
 
