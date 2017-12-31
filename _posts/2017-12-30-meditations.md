@@ -3,6 +3,7 @@ layout: post
 title:  "Reflections Based on Meditations"
 date:   2017-12-30
 categories: thoughts
+author: Bagus Trihatmaja
 ---
 
 # In Reasons
