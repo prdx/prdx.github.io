@@ -30,3 +30,6 @@ Maybe this bias is natural. That it's just the way -- we naturally cannot handle
 
 
 
+
+
+[Thiking, Fast and Slow](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555)
