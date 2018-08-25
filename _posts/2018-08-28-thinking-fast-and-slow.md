@@ -2,7 +2,7 @@
 layout: post
 title:  "Reflection on Thinking, Fast and Slow (Kahneman, Daniel)"
 date:   2018-08-25
-categories: ideas
+categories: thoughts
 author: Bagus Trihatmaja
 ---
 
